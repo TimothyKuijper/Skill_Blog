@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body{
     font-size: 21px;
@@ -6,10 +12,57 @@ body{
     font-weight: 400;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header, footer{
     background: #222831;
     color: white;
     height: 60px;
+}
+
+nav{
+    height: 100%;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+li{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
+
+.active{
+    background-color: orangered;
+    color: white;
+}
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;  
+    color: white;
+    display: block;
+    text-align: center;
+    line-height: 60px;
 }
 
 h1{
@@ -67,6 +120,24 @@ video{
     border-radius: 17px;
 }
 
+
+.Top{
+    width: 80px;
+    height: 80px;
+    background: #222831;
+    font-size: 150%;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+    color: white;
+    position: fixed;
+    bottom: 120px;
+    right: 120px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer{
     display: flex;
     align-items: center;
@@ -88,7 +159,15 @@ footer > p{
     img:hover{
         transform: none;
     }
+    .Top{
+        width: 60px;
+        height: 60px;
+        bottom: 60px;
+        right: 60px;
+    }
+
 }
+
 
 @media screen and (max-width: 600px){
     article{
